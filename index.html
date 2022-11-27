@@ -9,32 +9,44 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <title>MINIMAL</title>
 </head>
-<body>
-    <header>
+<body class="body">
+    <header class="body__header">
         <div class="wrapper">
-            <div>
-                <div>
+            <div class="header">
+                <div class="header__logo">
                     <img 
                         src="./images/png/logo.png" 
                         alt="logo" 
                         width="65" 
                         height="70"
                     >
-                    <p>
+                    <p class="header__logo-text">
                         minimal
                     </p>
                 </div>
-                <nav>
-                    <a href="#">
+                <nav class="header__navigation-list">
+                    <a 
+                        href="#" 
+                        class="header__menu-item"
+                    >
                         process
                     </a>
-                    <a href="#">
+                    <a 
+                        href="#" 
+                        class="header__menu-item"
+                    >
                         projects
                     </a>
-                    <a href="#">
+                    <a 
+                        href="#" 
+                        class="header__menu-item"
+                    >
                         team
                     </a>
-                    <a href="#">
+                    <a 
+                        href="#" 
+                        class="header__menu-item"
+                    >
                         contact
                     </a>
                 </nav>
@@ -43,83 +55,90 @@
     </header>
     <main>
         <section>
-            <div>
-                <div class="wrapper">
-                    <h1>
-                        Making brands stand out is our obsession
-                    </h1>
-                    <p>
-                        Let us help your brand stand out.
-                    </p>
+            <div class="body__main-background-image">
+                <div class="slogan">
+                    <div class="wrapper">
+                        <h1 class="slogan__title">
+                            Making brands stand out is our obsession
+                        </h1>
+                        <p class="slogan__description">
+                            Let us help your brand stand out.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div>
+            <div class="body__about-us">
                 <div class="wrapper">
-                    <p>
-                        Minimalist is a full-service digital creative agency located in Ontorio Canada. 
-                        We focus on design, consulting, technology, and photography. 
-                        We’ve been building unique digital products, platforms, and experiences 
-                        for the past 6 years. Let us help your company grow.
-                    </p>
-                    <a href="#">
-                        Get in Touch
-                    </a>
+                    <div class="about-us">
+                        <p class="about-us__description">
+                            Minimalist is a full-service digital creative agency located in Ontorio Canada. 
+                            We focus on design, consulting, technology, and photography. 
+                            We’ve been building unique digital products, platforms, and experiences 
+                            for the past 6 years. Let us help your company grow.
+                        </p>
+                        <a 
+                            href="#" 
+                            class="about-us__button"
+                        >
+                            Get in Touch
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="body__benefits">
             <div class="wrapper">
-                <div>
-                    <h2>
+                <div class="benefits">
+                    <h2 class="benefits__title">
                         How we make brands thrive
                     </h2>
-                    <div>
-                        <div>
-                            <div>
+                    <div class="benefits__list">
+                        <div class="card-benefit">
+                            <div class="card-benefit__image">
                                 <img 
                                     src="./images/png/image-2.png" 
                                     alt="img"
                                 >
                             </div>
-                            <div>
-                                <h4>
+                            <div class="card-benefit__information">
+                                <h4 class="card-benefit__title">
                                     SET a target
                                 </h4>
-                                <p>
+                                <p class="card-benefit__description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                     Suspendisse varius enim in eros elementum tristique.
                                 </p>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="card-benefit">
+                            <div class="card-benefit__image">
                                 <img 
                                     src="./images/png/image-3.png" 
                                     alt="img"
                                 >
                             </div>
-                            <div>
-                                <h4>
+                            <div class="card-benefit__information">
+                                <h4 class="card-benefit__title">
                                     design a solution
                                 </h4>
-                                <p>
+                                <p class="card-benefit__description">
                                     Duis cursus, mi quis viverra ornare, eros dolor interdum 
                                     nulla, ut commodo diam libero vitae erat.
                                 </p>
                             </div>
                         </div>
-                        <div>
-                            <div>
+                        <div class="card-benefit">
+                            <div class="card-benefit__image">
                                 <img 
                                     src="./images/png/image-1.png" 
                                     alt="img"
                                 >
                             </div>
-                            <div>
-                                <h4>
+                            <div class="card-benefit__information">
+                                <h4 class="card-benefit__title">
                                     track the progress
                                 </h4>
-                                <p>
+                                <p class="card-benefit__description">
                                     Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. 
                                     Nunc ut sem vitae risus tristique posuere.
                                 </p>
@@ -129,7 +148,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="body__projects">
             <div class="wrapper">
                 <div class="projects">
                     <h2 class="projects__title">
@@ -255,7 +274,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="body__team">
             <div class="wrapper">
                 <div class="team">
                     <h2 class="team__title">
@@ -642,7 +661,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="body__feedbacks">
             <div class="wrapper">
                 <div class="feedbacks">
                     <img 
@@ -683,7 +702,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="body__contacts">
             <div class="wrapper">
                 <div class="contacts">
                     <h2 class="contacts__title">
@@ -692,37 +711,46 @@
                     <div class="contacts__list">
                         <div class="card-contact">
                             <img src="./images/IMAGE-7.png" alt="icon">
-                            <h4>
+                            <h4 class="card-contact__title">
                                 MEET US IN PERSON
                             </h4>
                             <address>
-                                <a href="">
+                                <a 
+                                    href="" 
+                                    class="card-contact__text"
+                                >
                                     8776 Juniper Street Unit #204 Merriweather, Ontorio Canada
                                 </a>
                             </address>
                         </div>
                         <div class="card-contact">
                             <img src="./images/IMAGE-5.png" alt="mail">  
-                            <h4>
+                            <h4 class="card-contact__title">
                                 The traditional way
                             </h4>
-                            <p>
+                            <p class="card-contact__text">
                                 Email us
                             </p>
-                            <a href="mailto:contact@minimal.com">
+                            <a 
+                                href="mailto:contact@minimal.com" 
+                                class="card-contact__text"
+                            >
                                 contact@minimal.com
                             </a>
-                            <p>
+                            <p class="card-contact__text">
                                 Contact form Scroll down
                             </p>
                         </div>
                         <div class="card-contact">
                             <img src="./images/IMAGE-6.png" alt="icon">
-                            <h4>
+                            <h4 class="card-contact__title">
                                 Let’s get social
                             </h4>
-                            <div>
-                                <a href='#'>
+                            <div class="card-contact__socials">
+                                <a 
+                                    href='#' 
+                                    class="card-contact__text"
+                                >
                                     <svg 
                                         width="14" 
                                         height="14" 
@@ -738,7 +766,10 @@
                                     </svg>
                                     Facebook
                                 </a>
-                                <a href='#'>
+                                <a 
+                                    href='#' 
+                                    class="card-contact__text"
+                                >
                                     <svg 
                                             width="14" 
                                             height="12" 
@@ -761,7 +792,10 @@
                                     </svg>   
                                     Twitter
                                 </a>
-                                <a href='#'>
+                                <a 
+                                    href='#' 
+                                    class="card-contact__text"
+                                >
                                     <svg 
                                         width="14" 
                                         height="14" 
@@ -790,53 +824,62 @@
             </div>
         </section>
     </main>
-    <div>
+    <div class="body__footer">
         <div class="wrapper">
-            <div>
+            <div class="callback">
                 <form 
                     action="#" 
                     method="post" 
                     name="callback-form"
+                    class="callback__form"
                 >
-                <label for="client-name"></label>
-                <input 
-                    type="text" 
-                    name="client-name" 
-                    id="client-name" 
-                    placeholder="Name"
-                >
-                <label for="client-email"></label>
-                <input 
-                    type="email" 
-                    name="client-email" 
-                    id="client-email" 
-                    placeholder="Email"
-                >
-                <label for="client-budget"></label>
-                <input 
-                    type="number" 
-                    name="client-budget" 
-                    id="client-budget" 
-                    placeholder="Budget"
-                >
-                <textarea 
-                    name="client-project" 
-                    id="client-project" 
-                    cols="30" 
-                    rows="10" 
-                    placeholder="Describe youre project..."
-                ></textarea>
-                <button type="submit">
-                    Send Message
-                </button>
+                    <label for="client-name"></label>
+                    <input 
+                        type="text" 
+                        name="client-name" 
+                        id="client-name" 
+                        placeholder="Name"
+                        class="callback__input callback__input--dark"
+                    >
+                    <label for="client-email"></label>
+                    <input 
+                        type="email" 
+                        name="client-email" 
+                        id="client-email" 
+                        placeholder="Email"
+                        class="callback__input callback__input--light"
+                    >
+                    <label for="client-budget"></label>
+                    <input 
+                        type="number" 
+                        name="client-budget" 
+                        id="client-budget" 
+                        placeholder="Budget"
+                        class="callback__input callback__input--dark"
+                    >
+                    <textarea 
+                        name="client-project" 
+                        id="client-project" 
+                        cols="30" 
+                        rows="10" 
+                        placeholder="Describe youre project..."
+                        class="callback__textarea"
+                    ></textarea>
+                    <button 
+                        type="submit" 
+                        class="callback__button"
+                    >
+                        Send Message
+                    </button>
                 </form>
             </div>
-            <footer>
+            <footer class="footer">
                 <img 
                     src="./images/png/logo-footer.png" 
                     alt="logo"
+                    class="footer__logo"
                 >
-                <p>
+                <p class="footer__copyright">
                     Minimal Template made in Webflow. All rights reserved.
                 </p>
             </footer>
