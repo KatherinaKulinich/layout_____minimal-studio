@@ -1,0 +1,34 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
+.card-process {
+    text-align: center;
+
+    &__image {
+        width: 100%;
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-color;
+    }
+
+    &__information {
+        padding: 38px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__title {
+        @include marginY0;
+        @include font($font-mont, 400, 16px, 20px);
+        text-transform: uppercase;
+        
+    }
+
+    &__description {
+        @include marginY0;
+        @include font($font-vol, 400, 15px, 22px);
+    }
+}

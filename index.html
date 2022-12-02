@@ -11,7 +11,7 @@
 </head>
 <body class="body">
     <header class="body__header">
-        <div class="wrapper">
+        <div class="wrapper-secondary">
             <div class="header">
                 <div class="header__logo">
                     <img 
@@ -24,7 +24,18 @@
                         minimal
                     </p>
                 </div>
-                <nav class="header__navigation-list">
+                <div 
+                    class="header__menu-mobile" 
+                    id="menu-mob"
+                >
+                    <p class="header__menu-mob-text">
+                        Menu
+                    </p>
+                </div>
+                <nav 
+                    class="header__navigation-list header__hidden-mobile" 
+                    id="menu"
+                >
                     <a 
                         href="#process" 
                         class="header__menu-item"
@@ -58,12 +69,15 @@
             <div class="body__main-background-image">
                 <div class="slogan">
                     <div class="wrapper">
-                        <h1 class="slogan__title">
-                            Making brands stand out is our obsession
-                        </h1>
-                        <p class="slogan__description">
-                            Let us help your brand stand out.
-                        </p>
+                        <div class="slogan__content">
+                            <h1 class="slogan__title">
+                                Making brands stand out is our obsession
+                            </h1>
+                            <p class="slogan__description">
+                                Let us help your brand stand out.
+                            </p>
+                        </div>
+                        <div class="slogan__icon-cross"></div>
                     </div>
                 </div>
             </div>
@@ -93,10 +107,10 @@
                         How we make brands thrive
                     </h2>
                     <div class="process__list">
-                        <div class="card-process">
+                        <div class="card-process process__list-item">
                             <div class="card-process__image">
                                 <img 
-                                    src="./images/png/image-2.png" 
+                                    src="./images/png/image-1.png" 
                                     alt="img"
                                 >
                             </div>
@@ -110,10 +124,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="card-process">
+                        <div class="card-process process__list-item">
                             <div class="card-process__image">
                                 <img 
-                                    src="./images/png/image-3.png" 
+                                    src="./images/png/image-2.png" 
                                     alt="img"
                                 >
                             </div>
@@ -127,10 +141,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="card-process">
+                        <div class="card-process process__list-item">
                             <div class="card-process__image">
                                 <img 
-                                    src="./images/png/image-1.png" 
+                                    src="./images/png/image-3.png" 
                                     alt="img"
                                 >
                             </div>
@@ -155,8 +169,8 @@
                         Recent projects
                     </h2>
                     <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--woods"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     woods
@@ -165,11 +179,9 @@
                                     Photography
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--path"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     path
@@ -178,11 +190,9 @@
                                     Website • Photography
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--darkness"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     darkness
@@ -191,11 +201,9 @@
                                     Website
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--waves"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     waves
@@ -204,11 +212,9 @@
                                     Photography
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--drops"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     drops
@@ -217,11 +223,9 @@
                                     Website
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--ocean"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     ocean
@@ -230,11 +234,9 @@
                                     Website
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--town"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     town
@@ -243,11 +245,9 @@
                                     Website
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--mountain"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     mountain
@@ -256,11 +256,9 @@
                                     Website
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="projects__cards-list">
-                        <div class="card-project">
-                            <div class="card-project__image"></div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--camera"></div>
                             <div class="card-project__information">
                                 <h4 class="card-project__name">
                                     camera
@@ -269,7 +267,40 @@
                                     Website
                                 </p>
                             </div>
-                        </div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--summer"></div>
+                            <div class="card-project__information">
+                                <h4 class="card-project__name">
+                                    summer
+                                </h4>
+                                <p class="card-project__description">
+                                    Website
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--city"></div>
+                            <div class="card-project__information">
+                                <h4 class="card-project__name">
+                                    city
+                                </h4>
+                                <p class="card-project__description">
+                                    Photography
+                                </p>
+                            </div>
+                        </a>
+                        <a href="#" class="card-project projects__list-item">
+                            <div class="card-project__image card-project__image--sea"></div>
+                            <div class="card-project__information">
+                                <h4 class="card-project__name">
+                                    sea
+                                </h4>
+                                <p class="card-project__description">
+                                    Website
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -281,8 +312,10 @@
                         our team
                     </h2>
                     <div class="team__cards-list">
-                        <div class="card-team">
-                            <div class="card-team__photo"></div>
+                        <div class="card-team team__list-item">
+                            <div class="card-team__photo">
+                                <img src="./images/jpg/team-1.jpg" alt="team-card">
+                            </div>
                             <div class="card-team__information">
                                 <h4 class="card-team__name">
                                     Ron Swanson
@@ -358,8 +391,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-team">
-                            <div class="card-team__photo"></div>
+                        <div class="card-team team__list-item">
+                            <div class="card-team__photo">
+                                <img 
+                                    src="./images/jpg/team-2.jpg" 
+                                    alt="team-card" 
+                                    width="220" 
+                                    height="220"
+                                >
+                            </div>
                             <div class="card-team__information">
                                 <h4 class="card-team__name">
                                     Julia Depish
@@ -435,8 +475,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-team">
-                            <div class="card-team__photo"></div>
+                        <div class="card-team team__list-item">
+                            <div class="card-team__photo">
+                                <img 
+                                    src="./images/jpg/team-3.jpg" 
+                                    alt="team-card" 
+                                    width="220" 
+                                    height="220"
+                                >
+                            </div>
                             <div class="card-team__information">
                                 <h4 class="card-team__name">
                                     Danny Devry
@@ -559,8 +606,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-team">
-                            <div class="card-team__photo"></div>
+                        <div class="card-team team__list-item">
+                            <div class="card-team__photo">
+                                <img 
+                                    src="./images/jpg/team-4.jpg" 
+                                    alt="team-card" 
+                                    width="220" 
+                                    height="220"
+                                >
+                            </div>
                             <div class="card-team__information">
                                 <h4 class="card-team__name">
                                     Lisa Smith
@@ -668,31 +722,36 @@
                         src="./images/png/quotes.png" 
                         alt="icon"
                         class="feedbacks__image"
+                        width="62"
+                        height="62"
                     >
                     <div class="feedbacks__list">
-                        <div class="client-card">
-                            <p class="client-card__rewiew">
+                        <div class="client-card feedbacks__list-item">
+                            <p class="client-card__review">
                                 “I love these guys! They did a great job. I would recommend them to anyone.”
                             </p>
                             <img 
                                 src="./images/jpg/client-1.jpg" 
                                 alt="client-photo"
                                 class="client-card__photo"
+                                width="64"
+                                height="64"
                             >
                             <p class="client-card__name">
                                 Julius Von Uberstien
                             </p>
                         </div>
-                    </div>
-                    <div class="feedbacks__list">
-                        <div class="client-card">
-                            <p class="client-card__rewiew">
+                        <div class="feedbacks__separator"></div>
+                        <div class="client-card feedbacks__list-item">
+                            <p class="client-card__review">
                                 “Elexis Corp. has grown immensely with the help of Minimal.”
                             </p>
                             <img 
                                 src="./images/jpg/client-2.jpg" 
                                 alt="client-photo"
                                 class="client-card__photo"
+                                width="64"
+                                height="64"
                             >
                             <p class="client-card__name">
                                 Rachel Stamos
@@ -709,114 +768,141 @@
                         LET’s Get in touch
                     </h2>
                     <div class="contacts__list">
-                        <div class="card-contact">
-                            <img src="./images/IMAGE-7.png" alt="icon">
-                            <h4 class="card-contact__title">
-                                MEET US IN PERSON
-                            </h4>
-                            <address>
-                                <a 
-                                    href="" 
-                                    class="card-contact__text"
-                                >
-                                    8776 Juniper Street Unit #204 Merriweather, Ontorio Canada
-                                </a>
-                            </address>
-                        </div>
-                        <div class="card-contact">
-                            <img src="./images/IMAGE-5.png" alt="mail">  
-                            <h4 class="card-contact__title">
-                                The traditional way
-                            </h4>
-                            <p class="card-contact__text">
-                                Email us
-                            </p>
-                            <a 
-                                href="mailto:contact@minimal.com" 
-                                class="card-contact__text"
+                        <div class="card-contact contacts__list-item">
+                            <div class="card-contact__icon">
+                                <img 
+                                src="./images/IMAGE-7.png" 
+                                alt="icon" 
+                                width="44" 
+                                height="65"
                             >
-                                contact@minimal.com
-                            </a>
-                            <p class="card-contact__text">
-                                Contact form Scroll down
-                            </p>
-                        </div>
-                        <div class="card-contact">
-                            <img src="./images/IMAGE-6.png" alt="icon">
-                            <h4 class="card-contact__title">
-                                Let’s get social
-                            </h4>
-                            <div class="card-contact__socials">
-                                <a 
-                                    href='#' 
-                                    class="card-contact__text"
-                                >
-                                    <svg 
-                                        width="14" 
-                                        height="14" 
-                                        viewBox="0 0 14 14" 
-                                        fill="none" 
+                            </div>
+                            <div class="card-contact__content">
+                                <h4 class="card-contact__title">
+                                    MEET US IN PERSON
+                                </h4>
+                                <address>
+                                    <a 
+                                        href="" 
+                                        class="card-contact__text"
                                     >
-                                        <path 
-                                            d="M12.25 0H1.75C0.787294 0 0 0.788118 0 1.75V12.25C0 13.2135 0.787294 14 1.75 14H7.06094V8.97976H5.38341V6.79329H7.06094V5.698C7.06094 
-                                                4.00894 8.30694 2.68635 9.898 2.68635H11.4438V5.15529H10.0611C9.70035 5.15529 9.59247 5.36282 9.59247 5.65024V6.79329H11.4438V8.97976H9.59247V14H12.25C13.2135 
-                                                14 14 13.2135 14 12.25V1.75C14 0.788118 13.2135 0 12.25 0Z" 
-                                            fill="black"
-                                        />
-                                    </svg>
-                                    Facebook
-                                </a>
+                                        8776 Juniper Street <br> Unit #204 <br> Merriweather, Ontorio <br> Canada
+                                    </a>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="card-contact contacts__list-item">
+                            <div class="card-contact__icon">
+                                <img 
+                                src="./images/IMAGE-5.png" 
+                                alt="mail" 
+                                width="70" 
+                                height="50"
+                            > 
+                            </div> 
+                            <div class="card-contact__content">
+                                <h4 class="card-contact__title">
+                                    The traditional way
+                                </h4>
+                                <p class="card-contact__text">
+                                    Email us
+                                </p>
                                 <a 
-                                    href='#' 
-                                    class="card-contact__text"
+                                    href="mailto:contact@minimal.com" 
+                                    class="card-contact__mail"
                                 >
-                                    <svg 
+                                    contact@minimal.com
+                                </a>
+                                <p class="card-contact__text">
+                                    Contact form <br> Scroll down
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-contact contacts__list-item">
+                            <div class="card-contact__icon">
+                                <img 
+                                src="./images/IMAGE-6.png" 
+                                alt="icon" 
+                                width="68" 
+                                height="56"
+                            >
+                            </div>
+                            <div class="card-contact__content">
+                                <h4 class="card-contact__title">
+                                    Let’s get social
+                                </h4>
+                                <div class="card-contact__socials">
+                                    <a 
+                                        href='#' 
+                                        class="card-contact__text card-contact__social-item"
+                                    >
+                                        <svg 
                                             width="14" 
-                                            height="12" 
-                                            viewBox="0 0 14 12" 
+                                            height="14" 
+                                            viewBox="0 0 14 14" 
+                                            fill="none" 
+                                        >
+                                            <path 
+                                                d="M12.25 0H1.75C0.787294 0 0 0.788118 0 1.75V12.25C0 13.2135 0.787294 14 1.75 14H7.06094V8.97976H5.38341V6.79329H7.06094V5.698C7.06094 
+                                                    4.00894 8.30694 2.68635 9.898 2.68635H11.4438V5.15529H10.0611C9.70035 5.15529 9.59247 5.36282 9.59247 5.65024V6.79329H11.4438V8.97976H9.59247V14H12.25C13.2135 
+                                                    14 14 13.2135 14 12.25V1.75C14 0.788118 13.2135 0 12.25 0Z" 
+                                                fill="black"
+                                            />
+                                        </svg>
+                                        Facebook
+                                    </a>
+                                    <a 
+                                        href='#' 
+                                        class="card-contact__text card-contact__social-item"
+                                    >
+                                        <svg 
+                                                width="14" 
+                                                height="12" 
+                                                viewBox="0 0 14 12" 
+                                                fill="none"
+                                            >
+                                            <path 
+                                                d="M14 1.902C13.4843 2.12989 12.9313 2.28466 12.3503 2.35389C12.943 1.99844 13.3988 1.43533 13.6127 
+                                                    0.765664C13.0589 1.09466 12.4437 1.33344 11.7895 1.46178C11.2653 0.904108 10.5179 0.555664 9.69265 
+                                                    0.555664C8.10676 0.555664 6.82032 1.84055 6.82032 3.42722C6.82032 3.652 6.84521 3.87133 6.89498 
+                                                    4.08211C4.50721 3.96155 2.39087 2.81822 0.974541 1.08144C0.727207 1.50533 0.585652 1.99922 0.585652 
+                                                    2.52422C0.585652 3.52133 1.09276 4.40022 1.86354 4.91511C1.39299 4.90033 0.949652 4.77122 0.562319 
+                                                    4.55655C0.562319 4.56822 0.562319 4.57989 0.562319 4.59233C0.562319 5.98378 1.55243 7.14578 2.8661 
+                                                    7.40866C2.62499 7.474 2.37143 7.509 2.10932 7.509C1.92499 7.509 1.74454 7.49266 1.56954 7.45844C1.93432 
+                                                    8.60022 2.99599 9.43011 4.2521 9.45344C3.26976 10.2234 2.03154 10.6823 0.685985 10.6823C0.45343 10.6823 
+                                                    0.225541 10.6683 0.000762939 10.6411C1.27165 11.457 2.78132 11.9314 4.40376 11.9314C9.68643 11.9314 12.5759 
+                                                    7.55489 12.5759 3.76011C12.5759 3.63489 12.5728 3.51044 12.5665 3.38755C13.1273 2.98466 13.615 2.47833 14 1.902Z" 
+                                                fill="black"
+                                            />
+                                        </svg>   
+                                        Twitter
+                                    </a>
+                                    <a 
+                                        href='#' 
+                                        class="card-contact__text card-contact__social-item"
+                                    >
+                                        <svg 
+                                            width="14" 
+                                            height="14" 
+                                            viewBox="0 0 14 14" 
                                             fill="none"
                                         >
-                                        <path 
-                                            d="M14 1.902C13.4843 2.12989 12.9313 2.28466 12.3503 2.35389C12.943 1.99844 13.3988 1.43533 13.6127 
-                                                0.765664C13.0589 1.09466 12.4437 1.33344 11.7895 1.46178C11.2653 0.904108 10.5179 0.555664 9.69265 
-                                                0.555664C8.10676 0.555664 6.82032 1.84055 6.82032 3.42722C6.82032 3.652 6.84521 3.87133 6.89498 
-                                                4.08211C4.50721 3.96155 2.39087 2.81822 0.974541 1.08144C0.727207 1.50533 0.585652 1.99922 0.585652 
-                                                2.52422C0.585652 3.52133 1.09276 4.40022 1.86354 4.91511C1.39299 4.90033 0.949652 4.77122 0.562319 
-                                                4.55655C0.562319 4.56822 0.562319 4.57989 0.562319 4.59233C0.562319 5.98378 1.55243 7.14578 2.8661 
-                                                7.40866C2.62499 7.474 2.37143 7.509 2.10932 7.509C1.92499 7.509 1.74454 7.49266 1.56954 7.45844C1.93432 
-                                                8.60022 2.99599 9.43011 4.2521 9.45344C3.26976 10.2234 2.03154 10.6823 0.685985 10.6823C0.45343 10.6823 
-                                                0.225541 10.6683 0.000762939 10.6411C1.27165 11.457 2.78132 11.9314 4.40376 11.9314C9.68643 11.9314 12.5759 
-                                                7.55489 12.5759 3.76011C12.5759 3.63489 12.5728 3.51044 12.5665 3.38755C13.1273 2.98466 13.615 2.47833 14 1.902Z" 
-                                            fill="black"
-                                        />
-                                    </svg>   
-                                    Twitter
-                                </a>
-                                <a 
-                                    href='#' 
-                                    class="card-contact__text"
-                                >
-                                    <svg 
-                                        width="14" 
-                                        height="14" 
-                                        viewBox="0 0 14 14" 
-                                        fill="none"
-                                    >
-                                        <path 
-                                            d="M3.17059 1.49635C3.17059 2.32318 2.56035 2.99271 1.55565 2.99271C0.610235 2.99353 0 2.324 0 1.49635C0 
-                                                0.649765 0.63 0 1.59518 0C2.55953 0 3.15082 0.649765 3.17059 1.49635ZM0.0790588 13.804V4.17447H3.07176V13.8032H0.0790588V13.804Z" 
-                                            fill="black"
-                                        />
-                                        <path 
-                                            d="M4.86296 7.24685C4.86296 6.04532 4.82426 5.04144 4.78473 4.17508H7.38379L7.52214 5.51414H7.58061C7.97426 
-                                                4.88332 8.93943 3.9585 10.5536 3.9585C12.5226 3.95767 14 5.27697 14 8.1132V13.8038H11.0065V8.46732C11.0065 
-                                                7.22708 10.5741 6.3805 9.49038 6.3805C8.66273 6.3805 8.17108 6.9512 7.95532 7.50297C7.87543 7.69979 7.85649 
-                                                7.97567 7.85649 8.25073V13.8038H4.86296V7.24685Z" 
-                                            fill="black"
-                                        />
-                                    </svg> 
-                                    Linkdin
-                                </a>
+                                            <path 
+                                                d="M3.17059 1.49635C3.17059 2.32318 2.56035 2.99271 1.55565 2.99271C0.610235 2.99353 0 2.324 0 1.49635C0 
+                                                    0.649765 0.63 0 1.59518 0C2.55953 0 3.15082 0.649765 3.17059 1.49635ZM0.0790588 13.804V4.17447H3.07176V13.8032H0.0790588V13.804Z" 
+                                                fill="black"
+                                            />
+                                            <path 
+                                                d="M4.86296 7.24685C4.86296 6.04532 4.82426 5.04144 4.78473 4.17508H7.38379L7.52214 5.51414H7.58061C7.97426 
+                                                    4.88332 8.93943 3.9585 10.5536 3.9585C12.5226 3.95767 14 5.27697 14 8.1132V13.8038H11.0065V8.46732C11.0065 
+                                                    7.22708 10.5741 6.3805 9.49038 6.3805C8.66273 6.3805 8.17108 6.9512 7.95532 7.50297C7.87543 7.69979 7.85649 
+                                                    7.97567 7.85649 8.25073V13.8038H4.86296V7.24685Z" 
+                                                fill="black"
+                                            />
+                                        </svg> 
+                                        Linkdin
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -863,7 +949,7 @@
                         cols="30" 
                         rows="10" 
                         placeholder="Describe youre project..."
-                        class="callback__textarea"
+                        class="callback__input callback__input--light callback__textarea"
                     ></textarea>
                     <button 
                         type="submit" 
@@ -878,6 +964,8 @@
                     src="./images/png/logo-footer.png" 
                     alt="logo"
                     class="footer__logo"
+                    width="43"
+                    height="46"
                 >
                 <p class="footer__copyright">
                     Minimal Template made in Webflow. All rights reserved.
@@ -885,5 +973,6 @@
             </footer>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

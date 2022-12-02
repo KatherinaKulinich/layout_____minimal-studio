@@ -1,5 +1,25 @@
 @use './variables' as *;
 @use  './mixins' as *;
 
-@import './normalize.scss';
-@import './fonts.scss';
+@import './normalize';
+@import './fonts';
+
+@import './body';
+@import './settings';
+
+@import './blocks/header';
+@import './blocks/slogan';
+@import './blocks/about-us';
+@import './blocks/process';
+@import './blocks/projects';
+@import './blocks/team';
+@import './blocks/feedbacks';
+@import './blocks/contacts';
+@import './blocks/callback';
+@import './blocks/footer';
+
+@import './blocks/cards/card-process';
+@import './blocks/cards/card-project';
+@import './blocks/cards/card-team';
+@import './blocks/cards/client-card';
+@import './blocks/cards/card-contact';

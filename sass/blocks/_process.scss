@@ -1,0 +1,47 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.process {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    &__title {
+        @include sub-title;
+
+        &::after {
+            @include title-separator('../../images/png/line2.png');
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__list-item {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .process {
+        padding: 70px 0;
+        gap: 70px;
+
+        &__list {
+            flex-direction: row;
+        }
+
+        &__list-item {
+            width: 300px;
+            max-width: none;
+        }
+    }
+}

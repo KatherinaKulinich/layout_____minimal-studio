@@ -1,0 +1,30 @@
+@use './variables' as *;
+
+@mixin font($font, $fw, $fs, $lh, $color: $text-color) {
+    font-family: $font;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+}
+
+@mixin marginY0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin title-separator($url) {
+    content: url("#{$url}");
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+
+@mixin sub-title {
+    @include marginY0;
+    @include font($font-mont, 400, 23px, 36px);
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}

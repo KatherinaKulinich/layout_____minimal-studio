@@ -1,0 +1,41 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+
+.body {
+    &__main-background-image {
+        background-image: url('../images/jpg/background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 390px;
+        width: 100%;
+        position: relative;
+    }
+
+    &__about-us {
+        background-color: #FEFEC9;
+    }
+
+    &__projects,
+    &__feedbacks {
+        background-color: $background-color;
+    }
+
+    &__team,
+    &__process,
+    &__header {
+        background-color: #FFFFFF;
+    }
+
+    &__contacts {
+        background-image: url('../images/jpg/background-contacts.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__footer {
+        background-color: #000000;
+    }
+}

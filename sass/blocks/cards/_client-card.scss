@@ -1,0 +1,30 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
+.client-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__review {
+        @include font($font-vol, 400, 26px, 33px);
+        margin-top: 0;
+        margin-bottom: 24px;
+        max-width: 400px;
+        min-height: 130px;
+        max-height: 150px;
+    }
+
+    &__photo {
+        width: 62px;
+        height: 62px;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        @include marginY0;
+        @include font($font-mont, 400, 14px, 20px, #ABABAB);
+        text-transform: uppercase;
+    }
+}
